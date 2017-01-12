@@ -3,16 +3,16 @@
 #     team_name: a string
 #     strategy_name: a string
 #     strategy_description: a string
-#     move: A function that returns 'c' or 'b'
-####
+ # move: A function that returns 'c' or 'b'
+ ####
 
-team_name = 'Friends United for Careing and Kindness' # Only 10 chars displayed.
-strategy_name = 'Rat Out every time'
-strategy_description = 'litteraly the name'
+team_name = 'The Friends United for Caring and Kindness' # Miles, Chris and Zach
+strategy_name = 'Betrayal is a real Bit*ch'
+strategy_description = "Betray every time"
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
+    
     
     Make my move.
     Returns 'c' or 'b'. 
@@ -26,8 +26,8 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-    return 'c'
-
+    ##return 'c'
+    return 'b'
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
@@ -65,4 +65,6 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='b')             
+              result='b')              # move: A function that returns 'c' or 'b'
+ ####
+
